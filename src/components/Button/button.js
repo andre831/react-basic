@@ -7,10 +7,16 @@ class Button extends Component {
     //set default behavior
     static defaultProps = { 
 
-        title: 'Comportamento Default'
+        title: 'Default Behavior '
 
     }
 
+    //set default type for prop
+    static propTypes = {
+        
+        title: PropTypes.string.isRequired
+
+    }
 
 
     render(){
