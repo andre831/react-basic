@@ -1,14 +1,22 @@
 
 import React from 'react';
 import { render } from 'react-dom';
+import Button from './components/Button/button';
 
 class App extends React.Component {
   render() {
     return (
-      <h1>
-        Hello React!!
-      </h1>
+      <span>
+          <Button>
+            Update 
+          </Button>
+      </span>
+     
+
+      
+      
     );
+    
   }
 }
 
