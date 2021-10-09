@@ -4,21 +4,6 @@ import PropTypes from 'prop-types';
 
 class Button extends Component {    
     
-    //set default behavior
-    static defaultProps = { 
-
-        title: 'Default Behavior '
-
-    }
-
-    //set default type for prop
-    static propTypes = {
-        
-        title: PropTypes.string.isRequired
-
-    }
-
-
     render(){
 
         return(
@@ -33,4 +18,19 @@ class Button extends Component {
 
 }
 
+//set default behavior
+Button.defaultProps = { 
+
+    title: 'Default Behavior '
+
+}
+
+//set default type for prop
+Button.propTypes = {
+    
+    title: PropTypes.string.isRequired
+
+}
+
+//exports
 export default Button;
