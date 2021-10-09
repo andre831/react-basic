@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <span>
-          <Button>
+          <Button title="Clique aqui para atualizar: ">
             Update 
           </Button>
       </span>

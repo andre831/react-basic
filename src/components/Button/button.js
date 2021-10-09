@@ -5,9 +5,11 @@ class Button extends Component {
     render(){
 
         return(
-
-            <button> {this.props.children} </button>
-
+            
+            <div>
+                {this.props.title}
+                <button> {this.props.children} </button>
+            </div>
         )
 
     }
