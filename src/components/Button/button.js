@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
 
 
 class Button extends Component {    
@@ -8,28 +7,9 @@ class Button extends Component {
 
         return(
             
-            <div>
-                {this.props.title}
-                <button> {this.props.children} </button>
-            </div>
+            <button onClick={this.props.press}> {this.props.children} </button>
         )
-
     }
-
-}
-
-//set default behavior
-Button.defaultProps = { 
-
-    title: 'Default Behavior '
-
-}
-
-//set default type for prop
-Button.propTypes = {
-    
-    title: PropTypes.string.isRequired
-
 }
 
 //exports
